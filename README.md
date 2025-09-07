@@ -1,6 +1,6 @@
 # Fintech Data Migration — Azure Synapse (Bronze → Silver → Gold)
 
-**Overview:** End-to-end Azure data pipeline that migrates historical fintech data from an Azure SQL Database (`rohesensqldb`) into ADLS Gen2 and models it as Delta Lake (Bronze → Silver → Gold) using Synapse Copy Activities, PySpark notebooks, and Synapse orchestration. Production-style, idempotent, and notification-enabled.
+**Overview:** End-to-end Azure data pipeline that migrates historical fintech data from an Azure SQL Database (`rohesqldb`) into ADLS Gen2 and models it as Delta Lake (Bronze → Silver → Gold) using Synapse Copy Activities, PySpark notebooks, and Synapse orchestration. Production-style, idempotent, and notification-enabled.
 
 ---
 
