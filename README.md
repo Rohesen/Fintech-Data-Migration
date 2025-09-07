@@ -30,14 +30,32 @@
 
 **Flow:** Azure SQL (`rohesqldb` / schema `fintech`) → Synapse Copy (Lookup → ForEach Copy) → ADLS Gen2 `/fintech/bronze` (parquet) → Synapse Spark Notebook `BronzeToSilverDataProcess` → ADLS `/fintech/silver` (Delta) → Synapse Notebook `SilverToGoldDataProcess` → ADLS `/fintech/gold` (Delta dims & facts). Orchestration uses `FintechDataPipeline` with Logic App Web Activities for success/fail notifications.
 
-Screenshots from runs (see `/Project Screenshots/`):
 
-* `rohesqldb.png` (source DB)
-* `bronze layer after pipeline run.png`
-* `silver layer after pipeline run.png`
-* `gold layer after pipeline run.png`
-* `Successful_Run_FintechDataPipeline.png`
-* `Email_Notification_after_pipeline_run.png`
+**SQL Database** :
+
+<img src="Project%20Screenshots/rohesqldb.png" alt="rohesqldb (source DB)" width="800" /> 
+
+**PipeLine** :
+
+<img src="Project%20Screenshots/FintechDataPipeline.png" alt="FintechDataPipeline" width="800" /> 
+
+**Pipeline Run** : 
+
+<img src="Project%20Screenshots/Successful_Run_FintechDataPipeline.png" alt="Successful run - FintechDataPipeline" width="800" /> 
+
+**DataLake after successful migration**:
+
+<img src="Project%20Screenshots/bronze%20layer%20after%20pipeline%20run.png" alt="Bronze layer after pipeline run" width="800" /> 
+
+<img src="Project%20Screenshots/silver%20layer%20after%20pipeline%20run.png" alt="Silver layer after pipeline run" width="800" /> 
+
+<img src="Project%20Screenshots/gold%20layer%20after%20pipeline%20run.png" alt="Gold layer after pipeline run" width="800" /> 
+
+
+**Email notification after successful pipeline run**: 
+
+<img src="Project%20Screenshots/Email_Notification_after_pipeline_run.png" alt="Email notification after pipeline run" width="800" />
+
 
 ---
 
