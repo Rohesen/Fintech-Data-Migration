@@ -19,10 +19,8 @@
 5. [Setup & run (step-by-step)](#setup--run-step-by-step)
 6. [Key implementation details & snippets](#key-implementation-details--snippets)
 7. [Files / folder layout](#files--folder-layout)
-8. [Operational considerations & best practices](#operational-considerations--best-practices)
-9. [Resume bullets / How to present this project](#resume-bullets--how-to-present-this-project)
-10. [Next steps & enhancements](#next-steps--enhancements)
-11. [License & Contact](#license--contact)
+8. [Next steps & enhancements](#next-steps--enhancements)
+9. [License & Contact](#license--contact)
 
 ---
 
@@ -157,7 +155,7 @@ Load your sample/historical data (INSERTs, BCP, or bulk load).
 
 ### 3) Synapse Linked Services / Datasets
 
-* Create Linked Service to Azure SQL (`rohesensqldb`).
+* Create Linked Service to Azure SQL (`rohesqldb`).
 * Create Linked Service to ADLS Gen2 (container: `fintech`).
 * Create parameterized dataset (SQL source) with parameters `schemaname`, `tablename`.
 * Create sink dataset for ADLS Bronze folder (parquet) using path pattern.
